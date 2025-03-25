@@ -60,13 +60,14 @@ background-color: white;
   padding: 15px;
   display: block;
   text-decoration: none;
+  background-color: white;
 }
 .sidebar hr {
   margin: 0;
 }
 
-.sidebar a:hover {
-  background-color: #00796B;
+.sidebar a:hover, .sidebar .menu1:hover {
+  background-color: rgb(255, 231, 231);
 }
 
 /* Toggle Sidebar */
@@ -202,16 +203,22 @@ label i {
   width: 200px;
   margin-left: -28px;
   height: 80vh;
-  background: #444;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  box-shadow: 0 0 2px rgb(148, 148, 148);
   z-index: 1000;
   display: none;
+}
+
+.submenu a:hover, .submenu1 a:hover, .submenu2 a:hover, .submenu3 a:hover, .submenu4 a:hover{
+  background-color: #d4d4d4;
+  color: rgba(240, 0, 0, 0.952);
 }
 
 .submenu a, .submenu1 a, .submenu2 a, .submenu3 a, .submenu4 a {
   display: block;
   padding: 10px;
   font-size: 16px;
-  color: white;
   text-decoration: none;
 }
 
