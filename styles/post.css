@@ -1,3 +1,8 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 .navbar {
     width: 100%;
     background-color: white;
@@ -64,3 +69,260 @@
     background-color: rgba(216, 46, 51, 0.918);
     color: white;
 }
+
+/*  ====================== contener ========================== */
+.maiConten {
+    height: 125vh;
+    margin-top: 20px;
+    padding-top: 40px;
+    background-color: rgb(199, 199, 199);
+}
+
+.maiConten .conten{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.conten .category, .conten .menuCategory {
+    width: 48%;
+    background-color: white;
+    height: auto;
+    border-radius: 7px;
+    padding: 5px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    padding-top: 25px;
+}
+
+/*  ====================== menuCategory ===================== */
+.menuCategory .button{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    height: 15vh;
+    padding: 15px;
+}
+.menuCategory .button #button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid rgb(114, 114, 255);
+    color: rgb(114, 114, 255);
+    background-color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.menuCategory .button #button2{
+    font-size: 20px;
+    border: 2px solid rgba(168, 168, 168, 0.555);
+    background-color: rgb(209, 209, 209);
+    border-radius: 7px;
+    color: rgba(168, 168, 168, 0.822);
+    text-align: start;
+    padding-left: 40px;
+}
+
+.menuCategory .itemsProduct{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.itemsProduct .card {
+    height: 32vh;
+    width: 26%;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.itemsProduct .card img {
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    height: 25vh;
+    border-radius: 10px;
+    background-color: red;
+}
+
+ /* Arrange buttons horizontally with spacing */
+ .menuCategory .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    height: 15vh;
+  }
+  
+  .menuCategory .buttonPagination {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Left arrow button */
+  .menuCategory .left-arrow {
+    background-color: #bbbbbba4;
+    border: 2px solid #66666691;
+    color: #0000006e;
+  }
+  
+  .menuCategory .page-number {
+    background-color: #7474748c;
+    border: 2px solid #66666646;
+    color: #ffffff7c;
+  }
+  
+  .menuCategory .page-number.active {
+    background-color: #D32F2F;
+    border: none;
+    color: #FFFFFF;
+  }
+  
+  /* Right arrow button */
+  .menuCategory .right-arrow {
+    background-color: #FFFFFF;
+    border: 2px solid #666666;
+    color: #000000;
+  }
+
+  .cart-container {
+    display: flex;
+    flex-direction: column; /* Set items to stack in a column */
+    justify-content: space-between;
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 90vh;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.total-payable {
+    background-color: #26a69a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.total-payable h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.additional-charges {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.charge-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.charge-item label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.charge-item input {
+    padding: 5px;
+    width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.action-buttons button {
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.reset-btn {
+    background-color: #ff4444;
+    color: white;
+    width: 15%;
+}
+
+#reset, #pay, #draft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset i, #pay i, #draft i{
+    margin: 5px;
+}
+
+.pay-btn {
+    background-color: #4caf50;
+    color: white;
+    width: 20%;
+}
+
+
+.draft-btn {
+    background-color: #8d6e63;
+    color: white;
+    width: 15%;
+}
+
+.add{
+    display: flex;
+    width: auto;
+    height: 12vh;
+}
+
+.add input{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgba(138, 138, 138, 0.658);
+    font-size: 20px;
+}
+
+.add i {
+    margin-left: 20px;
+}
+
+#block {
+    display: none;
+}
+
+#showBlock:target + #block {
+    display: block;
+}
+/*  ========================= end main content ========================= */

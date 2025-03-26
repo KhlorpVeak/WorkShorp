@@ -3,22 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User</title>
+    <title>Posts</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/post.css">
-    <style>
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            margin-top: 20px;
-            height: 76vh;
-            padding: 20px;
-            transition: margin-left 0.3s;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -35,6 +23,137 @@
     </div>
 
     <!-- Main Content -->
-    <div class="content"> User </div>
+    <div class="maiConten">
+        <div class="conten">
+            <div class="category">
+                <div class="cart-container">
+                    <div class="mainTable">
+                        <div class="add">
+                            <input type="text">
+                            <i class="material-icons" style="font-size:48px; color: rgba(138, 138, 138, 0.829);">person_add</i>
+                        </div>
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Qty</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Spaghetti</td>
+                                    <td>$128.00</td>
+                                    <td>1</td>
+                                    <td>$128.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Cookie</td>
+                                    <td>$5.00</td>
+                                    <td>2</td>
+                                    <td>$10.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Milk</td>
+                                    <td>$23.00</td>
+                                    <td>1</td>
+                                    <td>$23.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mainpayable">
+                        <div class="total-payable">
+                            <h3>TOTAL PAYABLE: $161.00</h3>
+                        </div>
+                
+                        <div class="additional-charges">
+                            <div class="charge-item">
+                                <label>Tax</label>
+                                <input type="text" value="0%">
+                            </div>
+                            <div class="charge-item">
+                                <label>Discount</label>
+                                <input type="text" value="0">
+                            </div>
+                            <div class="charge-item">
+                                <label>Shipping</label>
+                                <input type="text" value="0">
+                            </div>
+                        </div>
+                
+                        <div class="action-buttons">
+                            <button class="reset-btn">
+                                <div id="reset">
+                                    <i class="material-icons" style="font-size:20px">refresh</i>
+                                    <span>Reset</span>
+                                </div>
+                            </button>
+                            <button class="pay-btn">
+                                <div id="pay">
+                                    <i class="fa fa-money" style="font-size:24px"></i>
+                                    <span>Pay Now</span>
+                                </div>
+                            </button>
+                            <button class="draft-btn">
+                                <div id="draft">
+                                    <i class="fa fa-hourglass-end" style="font-size:16px"></i>
+                                    <span>Draft</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuCategory">
+                <div class="button">
+                    <a href="#showBlock" id="button1">buList of Category</a>
+                    <button id="button2">Scan/Search Product by Code or Name</button>
+                </div>
+                <div id="showBlock"></div>
+                <div id="block">
+                    <div class="itemsProduct">
+                        <div class="card">
+                            <img src="../../images/profile.jpg" alt="logo">
+                            <span>Spaghetti</span>
+                            <p style="color: rgb(173, 0, 0);">128.00$</p>
+                        </div>
+                        <div class="card">
+                            <img src="../../images/profile.jpg" alt="logo">
+                            <span>Spaghetti</span>
+                            <p style="color: rgb(173, 0, 0);">128.00$</p>
+                        </div>
+                        <div class="card">
+                            <img src="../../images/profile.jpg" alt="logo">
+                            <span>Spaghetti</span>
+                            <p style="color: rgb(173, 0, 0);">128.00$</p>
+                        </div>
+                        <div class="card">
+                            <img src="../../images/profile.jpg" alt="logo">
+                            <span>Spaghetti</span>
+                            <p style="color: rgb(173, 0, 0);">128.00$</p>
+                        </div>
+                        <div class="card">
+                            <img src="../../images/profile.jpg" alt="logo">
+                            <span>Spaghetti</span>
+                            <p style="color: rgb(173, 0, 0);">128.00$</p>
+                        </div>
+                        <div class="card">
+                            <img src="../../images/profile.jpg" alt="logo">
+                            <span>Spaghetti</span>
+                            <p style="color: rgb(173, 0, 0);">128.00$</p>
+                        </div>
+                    </div>
+                    <div class="pagination-container">
+                        <div class="buttonPagination left-arrow"> < </div>
+                        <div class="buttonPagination page-number active"> 1 </div>
+                        <div class="buttonPagination page-number"> 2 </div>
+                        <div class="buttonPagination right-arrow"> > </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
