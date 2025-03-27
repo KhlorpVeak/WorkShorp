@@ -52,8 +52,71 @@ display: none;
   background-color: rgb(218, 218, 218);
 }
 
+
+/* ========= style image sideber ========== */
 .menu1{
-background-color: white;
+  display: block;
+  color: black;
+  text-align: left;
+  background-color: white;
+}
+
+/*  ================= style image =========================== */
+.menu1 .icon {
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  -webkit-mask-image: url('../../images/icons8-dashboard-100.png');
+  mask-image: url('../../images/icons8-dashboard-100.png');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+  .menu1 .icon2 {
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(209, 0, 0, 0.623);
+    -webkit-mask-image: url('../../images/icons8-food-bar-100.png');
+    mask-image: url('../../images/icons8-food-bar-100.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.menu1 .icon3 {
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+  /* background-color: rgba(209, 0, 0, 0.623); */
+  -webkit-mask-image: url('../../images/icons8-people-100.png');
+  mask-image: url('../../images/icons8-people-100.png');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.menu1 .icon4 {
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+  /* background-color: rgba(209, 0, 0, 0.623); */
+  -webkit-mask-image: url('../../images/icons8-setting-100.png');
+  mask-image: url('../../images/icons8-setting-100.png');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.menu1 .icon5 {
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+  /* background-color: rgba(209, 0, 0, 0.623); */
+  -webkit-mask-image: url('../../images/icons8-report-100.png');
+  mask-image: url('../../images/icons8-report-100.png');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.menu1 span{
+  width: 20%;
+  font-size: 15px;
 }
 
 .sidebar a {

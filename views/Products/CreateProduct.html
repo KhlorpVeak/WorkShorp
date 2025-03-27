@@ -6,25 +6,12 @@
     <title>User</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/Layout.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            margin-top: 20px;
-            height: 76vh;
-            padding: 20px;
-            transition: margin-left 0.3s;
-        }
-    </style>
+    <link rel="stylesheet" href="../../styles/product/createProduct.css">
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <a href="../Deshboad/Layout.html"><img src="../../images/logo.jpg" alt="logo"></a>
+        <a href="../Deshboad/Layout.html"><img src="../../images/restaurant-logo.png" alt="logo"></a>
         <label for="sidebarToggle" class="menu-icon">&#9776;</label>
         <div class="navleft">
             <a href="../posts/post.html">
@@ -45,20 +32,25 @@
 
     <!-- Sidebar Menu -->
     <div class="sidebar">
-        <a href="../Deshboad/Layout.html">
-            <i class="fa fa-bar-chart" style="font-size:48px;color:rgb(194, 0, 0)"></i>
+        <a href="../Deshboad/Layout.html" class="menu1">
+            <div class="icon" style="background-color: rgba(209, 0, 0, 0.623)"></div>
+            <span style="font-size: 12px; color: rgba(209, 0, 0, 0.623);">Dashboad</span>
         </a><hr>
         <label for="menu2" class="menu1">
-            <i class="material-icons" style="font-size:48px;color:red">free_breakfast</i>
+            <div class="icon2" style="background-color: red"></div>
+            <span style="color: red;">Product</span>
         </label><hr>
         <label for="menu3" class="menu1">
-            <i class="material-icons" style="font-size:48px;color:rgb(194, 0, 0)">wc</i>
+            <div class="icon3" style="background-color: rgba(209, 0, 0, 0.623)"></div>
+            <span style="color: rgba(209, 0, 0, 0.623);">People</span>
         </label><hr>
         <label for="menu4" class="menu1">
-            <i class="fa fa-cog" style="font-size:48px;color:rgb(194, 0, 0)"></i>
+            <div class="icon4" style="background-color: rgba(209, 0, 0, 0.623)"></div>
+            <span style="color: rgba(209, 0, 0, 0.623);">Setting</span>
         </label><hr>
         <label for="menu5" class="menu1">
-            <i class="fa fa-pencil-square-o" style="font-size:48px;color:rgb(194, 0, 0)"></i>
+            <div class="icon5" style="background-color: rgba(209, 0, 0, 0.623)"></div>
+            <span style="color: rgba(209, 0, 0, 0.623);">Reports</span>
         </label><hr>
     </div>
 
@@ -94,7 +86,50 @@
             <a href="../Reports/BestCustomers.html">Best Customers</a>
             <a href="../Reports/UserReport.html">User Report</a>
         </div>
-        <div class="content"> TO DO Create Product </div>
+        <div class="content">
+            <div class="title">
+                Create Product
+                <hr>
+            </div>
+            <div class="template">
+                <div class="card">
+                    <div>
+                        <label for="name">Name*</label>
+                        <input type="text">
+                    <!-- </div>
+                    <div> -->
+                        <label for="name">Category*</label>
+                        <input type="text">
+                    <!-- </div> -->
+                    <!-- <div> -->
+                        <label for="name">Product Price*</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="name">Product Cost*</label>
+                        <input type="text">
+                    <!-- </div>
+                    <div> -->
+                        <label for="name">Product Quantity*</label>
+                        <input type="text">
+
+                    <!-- </div>
+                    <div> -->
+                        <label for="name">Stock Count*</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="createImg">
+                    <p>Multiple Image</p>
+                    <div>
+                        <input type="file" multiple>
+                    </div>
+                </div>
+            </div>
+            <div class="submite">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
