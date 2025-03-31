@@ -1,0 +1,170 @@
+.iconNemuCreate1{
+    width: 28px;
+    height: 28px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/menus/icons8-add-properties-80.png');
+    mask-image: url('../../images/menus/icons8-add-properties-80.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.iconNemuAll1{
+    width: 28px;
+    height: 28px;
+    margin-left: -20px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/menus/icons8-list-view-50.png');
+    mask-image: url('../../images/menus/icons8-list-view-50.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.iconNemuCategory1{
+    width: 28px;
+    height: 28px;
+    margin-left: -40px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/menus/icons8-category-50.png');
+    mask-image: url('../../images/menus/icons8-category-50.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+/* ================ People ================= */
+.iconCustomer2{
+    width: 28px;
+    height: 28px;
+    margin-left: -10px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/menus/icons8-user-50.png');
+    mask-image: url('../../images/menus/icons8-user-50.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.iconUser2{
+    width: 28px;
+    height: 28px;
+    margin-left: -42px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/menus/icons8-user-50.png');
+    mask-image: url('../../images/menus/icons8-user-50.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+/* =================== setting ======================== */
+
+.iconSystem3{
+    width: 28px;
+    height: 28px;
+    /* margin-left: -42px; */
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/settings/icons8-system-setting-68.png');
+    mask-image: url('../../images/settings/icons8-system-setting-68.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.iconPOS3{
+    width: 28px;
+    height: 28px;
+    margin-left: -20px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/settings/icons8-sell-80.png');
+    mask-image: url('../../images/settings/icons8-sell-80.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.Currencys3{
+    width: 28px;
+    height: 28px;
+    margin-left: -35px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/settings/icons8-currency-exchange-50.png');
+    mask-image: url('../../images/settings/icons8-currency-exchange-50.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.Backup3{
+    width: 28px;
+    height: 28px;
+    margin-left: -50px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/settings/icons8-data-backup-50.png');
+    mask-image: url('../../images/settings/icons8-data-backup-50.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+/*  ====================== Report ========================== */
+.Sale4{
+    width: 28px;
+    height: 28px;
+    margin-left: -25px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/reports/icons8-report-50.png');
+    mask-image: url('../../images/reports/icons8-report-50.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.Product4{
+    width: 28px;
+    height: 28px;
+    margin-left: -5px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/reports/icons8-report-50.png');
+    mask-image: url('../../images/reports/icons8-report-50.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.Costomer4{
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/reports/icons8-report-50-2.png');
+    mask-image: url('../../images/reports/icons8-report-50-2.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.Top4{
+    width: 28px;
+    height: 28px;
+    margin-left: -33px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/reports/icons8-report-80.png');
+    mask-image: url('../../images/reports/icons8-report-80.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.Best4{
+    width: 28px;
+    height: 28px;
+    /* margin-left: -50px; */
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/reports/icons8-report-64.png');
+    mask-image: url('../../images/reports/icons8-report-64.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+.User4{
+    width: 28px;
+    height: 28px;
+    margin-left: -25px;
+    background-color: rgba(0, 0, 0, 0.466);
+    -webkit-mask-image: url('../../images/reports/icons8-report-80-2.png');
+    mask-image: url('../../images/reports/icons8-report-80-2.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.submenu1 a span, .submenu2 a span, .submenu3 a span, .submenu4 a span{
+    margin-left: 5px;
+}
+
+.submenu1 a, .submenu2 a, .submenu3 a, .submenu4 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+

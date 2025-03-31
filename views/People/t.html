@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Table with CSS Toggle Switch</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .graph-container {
+            width: 100%;
+            max-width: 888px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+        .actions {
+            text-align: center;
+        }
+        /* Toggle Switch Styling */
+        .toggle-switch {
+            display: inline-block;
+            position: relative;
+            width: 34px;
+            height: 20px;
+        }
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .toggle-switch input:checked + .slider {
+            background-color: #8B4513;
+        }
+        .toggle-switch input:checked + .slider:before {
+            transform: translateX(14px);
+        }
+        .material-icons {
+            color: #555;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .material-icons:hover {
+            color: #000;
+        }
+        .mainpagination {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .rows-per-page {
+            display: flex;
+            align-items: center;
+        }
+        .rows-per-page label {
+            margin-right: 10px;
+            color: black;
+        }
+        .rows-per-page select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .pagination {
+            display: flex;
+            align-items: center;
+        }
+        .pagination span {
+            margin: 0 5px;
+        }
+        .pagination-controls {
+            display: flex;
+            align-items: center;
+        }
+        .prev, .next {
+            cursor: pointer;
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+        }
+        .prev.disabled, .next.disabled {
+            color: #ccc;
+            pointer-events: none;
+        }
+        .prev svg, .next svg {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="graph-container">
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>lyly</td>
+                        <td></td>
+                        <td></td>
+                        <td>lyly@gmail.com</td>
+                        <td>89678000</td>
+                        <td class="actions">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <i class="material-icons">edit</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>lyly</td>
+                        <td></td>
+                        <td></td>
+                        <td>lyly@gmail.com</td>
+                        <td>89678000</td>
+                        <td class="actions">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <i class="material-icons">edit</i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="mainpagination">
+            <div class="rows-per-page">
+                <label for="rows">Rows per page</label>
+                <select id="rows">
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="pagination">
+                <span>1 - 2 of 2</span>
+                <span class="pagination-controls">
+                    <span class="prev disabled">
+                        <!-- Left Arrow Icon -->
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="next disabled">
+                        <!-- Right Arrow Icon -->
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -7,19 +7,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/Layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            margin-top: 20px;
-            height: 76vh;
-            padding: 20px;
-            transition: margin-left 0.3s;
-        }
-    </style>
+    <link rel="stylesheet" href="../../styles/product/category.css">
+    <link rel="stylesheet" href="../../styles/menu/menu.css">
+    <link rel="stylesheet" href="../../styles/menu/menu.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -75,31 +65,177 @@
         <input type="checkbox" id="menu5" class="menu-checkbox">
     
         <div class="submenu1">
-            <a href="./CreateProduct.html">Create Product</a>
-            <a href="./AllProducts.html">All Products</a>
-            <a href="#" style="background-color: #d4d4d4;">Category</a>
+            <a href="../Products/CreateProduct.html">
+                <p class="iconNemuCreate1"></p>
+                <span>Create Product</span>
+            </a>
+            <a href="../Products/AllProducts.html">
+                <p class="iconNemuAll1"></p>
+                <span>All Products</span>
+            </a>
+            <a href="#" style="background-color: #d4d4d4;">
+                <p class="iconNemuCategory1"></p>
+                <span>Category</span>
+            </a>
         </div>
     
         <div class="submenu2">
-            <a href="../People/Customers.html">List Customer</a>
-            <a href="../People/Users.html">List User</a>
+            <a href="../People/Customers.html">
+                <p class="iconCustomer2"></p>
+                <span>List Customer</span>
+            </a>
+            <a href="../People/Users.html">
+                <p class="iconUser2"></p>
+                <span>List User</span>
+            </a>
         </div>
     
         <div class="submenu3">
-            <a href="../Setting/SystemSetting.html">System Settings</a>
-            <a href="../Setting/PosSetting.html">POS Settings</a>
-            <a href="../Setting/Currency.html">Currency</a>
-            <a href="../Setting/Backup.html">Backup</a>
+            <a href="../Setting/SystemSetting.html">
+                <p class="iconSystem3"></p>
+                <span>System Settings</span>
+            </a>
+            <a href="../Setting/PosSetting.html">
+                <p class="iconPOS3"></p>
+                <span>POS Settings</span>
+            </a>
+            <a href="../Setting/Currency.html">
+                <p class="Currencys3"></p>
+                <span>Currencys</span>
+            </a>
+            <a href="../Setting/Backup.html">
+                <p class="Backup3"></p>
+                <span>Backup</span>
+            </a>
         </div>
         <div class="submenu4">
-            <a href="../Reports/SaleReport.html">Sale Report</a>
-            <a href="../Reports/ProductReport.html">Product Report</a>
-            <a href="../Reports/CustomerReport.html">Customer Report</a>
-            <a href="../Reports/TopSelling.html">Top Selling</a>
-            <a href="../Reports/BestCustomers.html">Best Customers</a>
-            <a href="../Reports/UserReport.html">User Report</a>
+            <a href="../Reports/SaleReport.html">
+                <p class="Sale4"></p>
+                <span>Sale Report</span>
+            </a>
+            <a href="../Reports/ProductReport.html">
+                <p class="Product4"></p>
+                <span>Product Report</span>
+            </a>
+            <a href="../Reports/CustomerReport.html">
+                <p class="Costomer4"></p>
+                <span>Customer Report</span>
+            </a>
+            <a href="../Reports/TopSelling.html">
+                <p class="Top4"></p>
+                <span>Top Selling</span>
+            </a>
+            <a href="../Reports/BestCustomers.html">
+                <p class="Best4"></p>
+                <span>Best Customers</span>
+            </a>
+            <a href="../Reports/UserReport.html">
+                <p class="User4"></p>
+                <span>User Report</span>
+            </a>
         </div>
-        <div class="content"> TO DO Category </div>
+        <div class="content">
+            <div class="title">
+                Category
+                <hr>
+            </div>
+            <div class="graph-container">
+                <div class="header">
+                    <div class="search">
+                        <span class="search-icon"><i class="fa fa-search"></i></span>
+                        <input class="buttonSearch" type="search" placeholder="Search this table.">
+                    </div>
+                    <button class="create-btn">
+                        <i class="fa fa-plus"></i>
+                        <span>Create</span>
+                    </button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="category-table">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th><span class="sort-arrow">↑</span> Category Code </th>
+                                <th><span class="sort-arrow">↑</span> Category Name </th>
+                                <th><span class="sort-arrow">↑</span></th>
+                                <th><span class="sort-arrow">↑</span> Action </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>C0005</td>
+                                <td>Main Food</td>
+                                <td></td>
+                                <td class="actions">
+                                    <i class="material-icons">edit</i>
+                                    <i class="fa fa-remove"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>C0004</td>
+                                <td>Fast Food</td>
+                                <td></td>
+                                <td class="actions">
+                                    <i class="material-icons">edit</i>
+                                    <i class="fa fa-remove"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>C0003</td>
+                                <td>Tea</td>
+                                <td></td>
+                                <td class="actions">
+                                    <i class="material-icons">edit</i>
+                                    <i class="fa fa-remove"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>C0002</td>
+                                <td>Latte</td>
+                                <td></td>
+                                <td class="actions">
+                                    <i class="material-icons">edit</i>
+                                    <i class="fa fa-remove"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>C0001</td>
+                                <td>Soft Drink</td>
+                                <td>Soft Drink</td>
+                                <td class="actions">
+                                    <i class="material-icons">edit</i>
+                                    <i class="fa fa-remove"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mainpagination">
+                    <div class="rows-per-page">
+                        <label for="rows" style="color: black;">Rows per page</label>
+                        <select id="rows">
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="pagination">
+                        <span>1 - 2 of 2</span>
+                        <span class="pagination-controls">
+                            <span class="prev">prev</span>
+                            <span class="next">next</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer with Pagination -->
+            <div class="footer">
+                <span>HelloS</span>
+            </div>
+        </div>
     </div>
 </body>
 </html>

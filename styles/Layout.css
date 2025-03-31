@@ -63,7 +63,7 @@ display: none;
 
 /*  ================= style image =========================== */
 .menu1 .icon {
-  margin-left: 5px;
+  margin-left: 10px;
   width: 35px;
   height: 35px;
   background-color: red;
@@ -74,7 +74,7 @@ display: none;
 }
 
   .menu1 .icon2 {
-    margin-left: 5px;
+    margin-left: 10px;
     width: 35px;
     height: 35px;
     background-color: rgba(209, 0, 0, 0.623);
@@ -84,39 +84,39 @@ display: none;
     mask-size: cover;
 }
 .menu1 .icon3 {
-  margin-left: 5px;
+  margin-left: 10px;
   width: 35px;
   height: 35px;
-  /* background-color: rgba(209, 0, 0, 0.623); */
   -webkit-mask-image: url('../../images/icons8-people-100.png');
   mask-image: url('../../images/icons8-people-100.png');
   -webkit-mask-size: cover;
   mask-size: cover;
 }
 .menu1 .icon4 {
-  margin-left: 5px;
+  margin-left: 10px;
   width: 35px;
   height: 35px;
-  /* background-color: rgba(209, 0, 0, 0.623); */
   -webkit-mask-image: url('../../images/icons8-setting-100.png');
   mask-image: url('../../images/icons8-setting-100.png');
   -webkit-mask-size: cover;
   mask-size: cover;
 }
 .menu1 .icon5 {
-  margin-left: 5px;
+  margin-left: 10px;
   width: 35px;
   height: 35px;
-  /* background-color: rgba(209, 0, 0, 0.623); */
-  -webkit-mask-image: url('../../images/icons8-report-100.png');
-  mask-image: url('../../images/icons8-report-100.png');
+  -webkit-mask-image: url('../images/reports/icons8-report-100.png');
+  mask-image: url('../images/reports/icons8-report-100.png');
   -webkit-mask-size: cover;
   mask-size: cover;
 }
 
 .menu1 span{
-  width: 20%;
-  font-size: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
 }
 
 .sidebar a {
@@ -135,7 +135,7 @@ display: none;
 
 /* Toggle Sidebar */
 #sidebarToggle:checked ~ .sidebar {
-  width: 80px;
+  width: 90px;
 }
 
 /* Close Button Inside Sidebar */
@@ -149,7 +149,7 @@ display: none;
 
 #sidebarToggle:checked ~ .menu,
 #sidebarToggle:checked ~ footer {
-  margin-left: 100px;
+  margin-left: 110px;
 }
 
 /* =========================================== end ====================================== */
@@ -261,9 +261,9 @@ label i {
 
 .submenu, .submenu1, .submenu2, .submenu3, .submenu4 {
   position: absolute;
-  top: 47px;
+  top: 48px;
   left: 0;
-  width: 200px;
+  width: 160px;
   margin-left: -28px;
   height: 80vh;
   background: white;
@@ -280,8 +280,7 @@ label i {
 
 .submenu a, .submenu1 a, .submenu2 a, .submenu3 a, .submenu4 a {
   display: block;
-  padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
 }
 

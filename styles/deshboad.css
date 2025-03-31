@@ -1,9 +1,8 @@
 /* Content */
 .content {
-  width: 100%;
+  width: auto;
   margin-top: 20px;
-  height: 76vh;
-  padding: 20px;
+  height: auto;
   transition: margin-left 0.3s;
 }
 
@@ -11,20 +10,19 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    height: 50vh;
+    height: 55vh;
     margin-bottom: 20px;
     border-radius: 4px;
-    padding: 15px;
+    margin: 15px;
   }
 
   /* ================================== dashboad chart ================================*/
   .graph-container {
-    width: 67%;
-    height: 277px;
+    width: 70%;
     background-color: white;
     border: 1px solid #E0E0E0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 5px;
   }
   .title {
       /* text-align: center; */
@@ -52,8 +50,7 @@
   svg {
       margin-top: 20px;
       width: 100%;
-      /* width: auto; */
-      height: 217px;
+      height: 307px;
   }
   .grid-line {
       stroke: #E0E0E0;
@@ -97,6 +94,7 @@
   
   .product {
     width: 28%;
+    text-align: center;
     background-color: white;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
   }
@@ -105,48 +103,105 @@
   .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 20px;
   }
   
   /* Each column*/
   .column {
-    flex: 1 1 25%;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    background-color: red;
   }
   
   /* Well styling for each info box */
   .well {
+    display: flex;
+    justify-content: space-between;
     background-color: #fff;
-    height: 15vh;
+    height: 18vh;
+    width: 100%;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
     text-align: center;
   }
   
-  .well h4 {
+  .well .iconImageSale {
+    margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(0, 180, 0);
+    -webkit-mask-image: url('../images/dashbaod/icons8-sale-100.png');
+    mask-image: url('../images/dashbaod/icons8-sale-100.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+
   }
-  
-  .well p {
-    font-size: 16px;
-    color: #666;
+
+  .well .iconImageProduct {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(0, 180, 0);
+    -webkit-mask-image: url('../images/dashbaod/icons8-products-100.png');
+    mask-image: url('../images/dashbaod/icons8-products-100.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+
+  }
+
+  .well .iconImageIncome {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(0, 180, 0);
+    -webkit-mask-image: url('../images/dashbaod/icons8-income-100.png');
+    mask-image: url('../images/dashbaod/icons8-income-100.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+
+  }
+
+  .well .price {
+    width: 70%;
+  }
+
+  .well .price h4{
+    font-size: 20px;
+  }
+
+  .well .price p{
+    color: red;
+    margin-top: -18px;
+  }
+
+  .product img {
+    width: 80%;
+    height: 30vh;
   }
   
 /* ======================== footer ========================== */
 footer{
-  margin-top: 20px;
-  padding: 30px;
   transition: margin-left 0.3s;
 }
 
 footer .footer {
+  margin: 16px;
   display: flex;
-  margin-top: 20px;
   height: 20vh;
   margin-bottom: 20px;
   border-radius: 4px;
-  margin-top: -25px;
   background-color: white;
 }
 
