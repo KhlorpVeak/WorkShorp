@@ -319,11 +319,11 @@
     margin-left: 20px;
 }
 
-#block {
+/* #block {
     display: none;
 }
 
 #showBlock:target + #block {
     display: block;
-}
+} */
 /*  ========================= end main content ========================= */
