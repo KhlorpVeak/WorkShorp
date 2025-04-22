@@ -278,6 +278,25 @@ label i {
   color: rgba(240, 0, 0, 0.952);
 }
 
+.submenu1 a:hover .iconNemuCreate1,
+.submenu1 a:hover .iconNemuAll1,
+.submenu1 a:hover .iconNemuCategory1,
+.submenu2 a:hover .iconCustomer2,
+.submenu2 a:hover .iconUser2,
+.submenu3 a:hover .iconSystem3,
+.submenu3 a:hover .iconPOS3,
+.submenu3 a:hover .Currencys3,
+.submenu3 a:hover .Backup3,
+.submenu4 a:hover .Sale4,
+.submenu4 a:hover .Product4,
+.submenu4 a:hover .Costomer4,
+.submenu4 a:hover .Top4,
+.submenu4 a:hover .Best4,
+.submenu4 a:hover .User4
+{
+  background-color: red;
+}
+
 .submenu a, .submenu1 a, .submenu2 a, .submenu3 a, .submenu4 a {
   display: block;
   font-size: 15px;
