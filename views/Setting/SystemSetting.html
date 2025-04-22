@@ -8,19 +8,8 @@
     <link rel="stylesheet" href="../../styles/Layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../styles/menu/menu.css">
-    <style>
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            margin-top: 20px;
-            height: 76vh;
-            padding: 20px;
-            transition: margin-left 0.3s;
-        }
-    </style>
+    <link rel="stylesheet" href="../../styles/Setting/SystemSetting.css">
+    <link rel="website icon" type="jpg" href="../../images/restaurant-logo.png">
 </head>
 <body>
     <!-- Navbar -->
@@ -89,7 +78,6 @@
                 <span>Category</span>
             </a>
         </div>
-    
         <div class="submenu2">
             <a href="../People/Customers.html">
                 <p class="iconCustomer2"></p>
@@ -100,7 +88,6 @@
                 <span>List User</span>
             </a>
         </div>
-    
         <div class="submenu3">
             <a href="#" style="background-color: #d4d4d4;">
                 <p class="iconSystem3"></p>
@@ -145,7 +132,119 @@
                 <span>User Report</span>
             </a>
         </div>
-        <div class="content"> TO DO SystemSetting </div>
+
+        <div class="content">
+            <div class="title">
+                Customers Management
+                <hr>
+            </div>
+            <div class="form-container">
+                <div class="form-grid">
+                    <!-- Default Currency -->
+                    <div class="form-group">
+                        <label>Default Currency</label>
+                        <select>
+                            <option>US DOLLAR</option>
+                        </select>
+                    </div>
+                    <!-- Default Email -->
+                    <div class="form-group">
+                        <label class="required">Default Email</label>
+                        <input type="email" value="admin@example.com">
+                    </div>
+                    <!-- Change Logo -->
+                    <div class="form-group">
+                        <label>Change Logo</label>
+                        <input type="file" value="Choose File">
+                    </div>
+                    <!-- Company Name -->
+                    <div class="form-group">
+                        <label class="required">Company Name</label>
+                        <input type="text" value="Bee Coffee Shop">
+                    </div>
+                    <!-- Company Phone -->
+                    <div class="form-group">
+                        <label class="required">Company Phone</label>
+                        <input type="text" value="6315969770">
+                    </div>
+                    <!-- Developed by -->
+                    <div class="form-group">
+                        <label class="required">Developed by</label>
+                        <input type="text" value="Bee Coffee Shop">
+                    </div>
+                    <!-- Footer -->
+                    <div class="form-group">
+                        <label>Footer</label>
+                        <input type="text" value="">
+                    </div>
+                    <!-- Default Language -->
+                    <div class="form-group">
+                        <label class="required">Default Language</label>
+                        <select>
+                            <option>English</option>
+                        </select>
+                    </div>
+                    <!-- Default Customer -->
+                    <div class="form-group">
+                        <label>Default Customer</label>
+                        <select>
+                            <option>walk-in-customer</option>
+                        </select>
+                    </div>
+                    <!-- Stocky -->
+                    <div class="form-group">
+                        <label>Default Warehouse</label>
+                        <!-- <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            Ultimate Inventory with POS
+                        </label> -->
+                        <select>
+                            <option>Default Warehouse</option>
+                        </select>
+                    </div>
+                    <!-- Default SMS Gateway -->
+                    <div class="form-group">
+                        <label class="required">Default SMS Gateway</label>
+                        <select>
+                            <option>twilio</option>
+                        </select>
+                    </div>
+                    <!-- Time Zone -->
+                    <div class="form-group">
+                        <label>Time Zone</label>
+                        <select>
+                            <option>UTCGMT+00:00 - UTC</option>
+                        </select>
+                    </div>
+                    <!-- Address -->
+                </div>
+                <div class="form-group">
+                    <div class="address">
+                        <label class="required">Address</label>
+                        <input class="text" type="text" value="301 Siem Reap, Cambodia">
+                    </div>
+                </div>
+                <!-- Invoice Footer -->
+                <div class="form-checkbox">
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked>
+                        Invoice footer
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked>
+                        Create Quotation with Stock
+                    </label>
+                </div>
+                <div class="footer">
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Terms & Conditions</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

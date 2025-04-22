@@ -8,19 +8,8 @@
     <link rel="stylesheet" href="../../styles/Layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../styles/menu/menu.css">
-    <style>
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            margin-top: 20px;
-            height: 76vh;
-            padding: 20px;
-            transition: margin-left 0.3s;
-        }
-    </style>
+    <link rel="website icon" type="jpg" href="../../images/restaurant-logo.png">
+    <link rel="stylesheet" href="../../styles/Report/best-customer.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -145,7 +134,59 @@
                 <span>User Report</span>
             </a>
         </div>
-        <div class="content"> TO DO BestCustomers </div>
+        <div class="content">
+            <div class="title">
+                Best Customer Report
+                <hr>
+            </div>
+            <div class="container">
+                <!-- Header Section -->
+                <div class="header">
+                    <div class="buttons">
+                        <button class="create-btn">PDF</button>
+                    </div>
+                </div>
+        
+                <!-- Table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Total Sales</th>
+                            <th>Total Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>walk-in-customer</td>
+                            <td>123456780</td>
+                            <td>walk-in-customer@example.com</td>
+                            <td>1</td>
+                            <td>$ 25.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+                <!-- Footer Section -->
+                <div class="mainpagination">
+                    <div class="rows-per-page">
+                        <label for="rows" style="color: black;">Rows per page</label>
+                        <select id="rows">
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="pagination">
+                        <span>1 - 2 of 2</span>
+                        <span class="pagination-controls">
+                            <span class="prev">prev</span>
+                            <span class="next">next</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

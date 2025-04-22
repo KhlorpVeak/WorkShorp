@@ -8,19 +8,8 @@
     <link rel="stylesheet" href="../../styles/Layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../styles/menu/menu.css">
-    <style>
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            margin-top: 20px;
-            height: 76vh;
-            padding: 20px;
-            transition: margin-left 0.3s;
-        }
-    </style>
+    <link rel="stylesheet" href="../../styles/Setting/Post.css">
+    <link rel="website icon" type="jpg" href="../../images/restaurant-logo.png">
 </head>
 <body>
     <!-- Navbar -->
@@ -145,7 +134,90 @@
                 <span>User Report</span>
             </a>
         </div>
-        <div class="content"> TO DO PosSetting </div>
+        <div class="content">
+            <div class="title">
+                Customers Management
+                <hr>
+            </div>
+            <div class="form-container">
+                <label for="customer-note">Note to customer *</label>
+                <input type="text" id="customer-note" placeholder="Thank You For Shopping With Us, Please Come Again">
+        
+                <div class="toggle-row">
+                    <div class="toggle-group" id="toggle-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-phone">
+                            <span class="slider"></span>
+                        </label>
+                        <span for="show-phone" class="show">Show Phone</span>
+                    </div>
+                    <div class="toggle-group" id="toggle-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-address">
+                            <span class="slider"></span>
+                        </label>
+                        <span for="show-address">Show Address</span>
+                    </div>
+                    <div class="toggle-group" id="toggle-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-email" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <span for="show-email">Show Email</span>
+                    </div>
+                </div>
+        
+                <div class="toggle-row">
+                    <div class="toggle-group" id="toggle-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-customer">
+                            <span class="slider"></span>
+                        </label>
+                        <span for="show-customer">Show Customer</span>
+                    </div>
+                    <div class="toggle-group" id="toggle-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-warehouse">
+                            <span class="slider"></span>
+                        </label>
+                        <span for="show-warehouse">Show Warehouse</span>
+                    </div>
+                    <div class="toggle-group" id="toggle-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-tax" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <span for="show-tax">Show Tax & Discount & Shipping</span>
+                    </div>
+                </div>
+        
+                <div class="toggle-row">
+                    <div class="toggle-group" id="toggle-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-barcode">
+                            <span class="slider"></span>
+                        </label>
+                        <span for="show-barcode">Show Barcode</span>
+                    </div>
+                    <div class="toggle-group" id="toggle-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="show-note">
+                            <span class="slider"></span>
+                        </label>
+                        <span for="show-note">Show Note to Customer</span>
+                    </div>
+                    <div class="toggle-group" id="toggle-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="print-invoice" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <span for="print-invoice">Print Invoice Automatically</span>
+                    </div>
+                </div>
+        
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

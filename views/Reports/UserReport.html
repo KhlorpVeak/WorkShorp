@@ -8,19 +8,8 @@
     <link rel="stylesheet" href="../../styles/Layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../styles/menu/menu.css">
-    <style>
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            margin-top: 20px;
-            height: 76vh;
-            padding: 20px;
-            transition: margin-left 0.3s;
-        }
-    </style>
+    <link rel="website icon" type="jpg" href="../../images/restaurant-logo.png">
+    <link rel="stylesheet" href="../../styles/Report/userReport.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -145,7 +134,80 @@
                 <span>User Report</span>
             </a>
         </div>
-        <div class="content"> TO DO UserReport </div>
+        <div class="content">
+            <div class="title">
+                User Report
+                <hr>
+            </div>
+            <div class="container">
+                <!-- Header Section -->
+                <div class="header">
+                    <div class="search">
+                        <span class="search-icon"><i class="fa fa-search"></i></span>
+                        <input class="buttonSearch" type="search" placeholder="Search this table.">
+                    </div>
+                </div>
+        
+                <!-- Table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Total Sales</th>
+                            <th>Total Purchases</th>
+                            <th>Total Quotations</th>
+                            <th>Total return sales</th>
+                            <th>Total return purchases</th>
+                            <th>Total transfers</th>
+                            <th>Total adjustments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>sale</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <button>Reports</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Coffee Shop</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <button>Reports</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+                <!-- Footer Section -->
+                <div class="mainpagination">
+                    <div class="rows-per-page">
+                        <label for="rows" style="color: black;">Rows per page</label>
+                        <select id="rows">
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="pagination">
+                        <span>1 - 2 of 2</span>
+                        <span class="pagination-controls">
+                            <span class="prev">prev</span>
+                            <span class="next">next</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
