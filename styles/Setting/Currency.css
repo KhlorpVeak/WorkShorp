@@ -65,6 +65,7 @@ body {
 .create-btn {
     background-color: #8d6e63;
     color: white;
+    border-radius: 50px;
 }
 
 /* Table Styling */
@@ -146,4 +147,8 @@ tr:nth-child(even) {
     font-size: 14px;
     width: 93%;
     background-color: red;
+}
+
+.Currencyth{
+    width: 23%;
 }

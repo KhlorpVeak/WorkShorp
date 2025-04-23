@@ -10,7 +10,7 @@ body{
 .box {
     width: 670px;
     height: 460px;
-    background-color: rgba(169, 169, 169, 0.562);
+    background-color: rgba(224, 224, 224, 0.527);
     margin: 170px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -107,4 +107,8 @@ a:has(.button1) .button1 {
 
 .sky input:valid ~ input:valid ~ a .button1 {
     cursor: pointer;
+}
+
+.font2 a {
+    color: rgba(44, 44, 44, 0.774);
 }

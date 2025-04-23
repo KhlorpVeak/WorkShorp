@@ -125,7 +125,8 @@ tr:nth-child(even) {
 
 td button {
     padding: 15px;
-    background-color: #000153bb;
+    background-color: rgb(126, 126, 126);
+    border-radius: 5px;
     color: white;
     border: none;
 }

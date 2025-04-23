@@ -3,13 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User</title>
+    <title>product create</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/Layout.css">
     <link rel="stylesheet" href="../../styles/product/createProduct.css">
     <link rel="stylesheet" href="../../styles/menu/menu.css">
     <link rel="stylesheet" href="../../styles/menu/menu.css">
     <link rel="website icon" type="jpg" href="../../images/restaurant-logo.png">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <style>
+        .drop-area {
+            border: 2px dashed #ccc;
+            margin-top: 10px;
+            border-radius: 5px;
+            width: 50%;
+            height: 27vh;
+            background-color: #fafafa;
+            display: block;
+            cursor: pointer;
+        }
+
+        #drop-area-small{
+            display: flex;
+            justify-content: center;
+        }
+        .drop-area:hover {
+            background-color: #f0f0f0;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+
+        /* Icon styling */
+        .icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 10px;
+            position: relative;
+        }
+
+        .icon::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 2px dashed #66666679;
+            margin-top: 18px;
+            left: 0;
+        }
+
+        .icon::after {
+            content: '👆';
+            font-size: 40px;
+            position: absolute;
+            top: 27px;
+            left: 0;
+            color: #66666679;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -169,13 +221,24 @@
                 </div>
                 <div class="createImg">
                     <p>Multiple Image</p>
-                    <div>
-                        <input type="file" multiple>
+                    <div id="drop">
+                        <label for="fileInput" class="drop-area">
+                            <div id="drop-area-small">
+                                <div class="icon"></div>
+                            </div>
+                            <h2 style="color: #66666679; font-size: 17px; margin-top: 45px;">Drag & Drop multiple images FOR product</h2>
+                            <input type="file" id="fileInput" multiple accept="image/*">
+                        </label>
                     </div>
                 </div>
             </div>
             <div class="submite">
                 <button type="submit">Submit</button>
+            </div>
+            <!-- footer -->
+            <div class="footer">
+                <span>HelloS</span>
+                 <span>HelloS</span>
             </div>
         </div>
     </div>

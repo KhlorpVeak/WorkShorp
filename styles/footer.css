@@ -1,0 +1,9 @@
+/* Footer Styling */
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 97%;
+    background-color: red;
+}

@@ -104,6 +104,9 @@ body {
     border-collapse: collapse;
     background-color: white;
 }
+.category-table .category{
+    width: 35%;
+}
 .category-table th, .category-table td {
     padding: 10px;
     text-align: left;

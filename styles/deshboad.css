@@ -57,7 +57,11 @@
       stroke-width: 1px;
   }
   .axis {
-      stroke: black;
+      stroke: rgb(85, 85, 85);
+      stroke-width: 1px;
+  }
+  .axisx {
+      stroke: rgba(148, 148, 148, 0.842);
       stroke-width: 1px;
   }
   .axis-label, .tick-label, .day-label {
